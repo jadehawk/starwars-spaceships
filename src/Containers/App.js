@@ -37,7 +37,8 @@ class App extends Component {
     }
   }
   componentDidMount() {
-    fetch('https://swapi.co/api/starships/')
+    // fetch('https://swapi.co/api/starships/')
+    fetch('https://api.myjson.com/bins/fhduc')
       .then(response => response.json())
       .then(result => result = result.results)
       .then(ships => this.setState({ spaceships: ships }))
